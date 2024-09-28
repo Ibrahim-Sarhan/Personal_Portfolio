@@ -147,10 +147,7 @@ body,
 
 .nav__link:hover,
 .nav__link:active {
-  /* text-shadow: 0 0 2px var(--color-green); */
   color: var(--color-secondary);
-  /* text-decoration: underline;
-  text-decoration-color: var(--color-secondary); */
 }
 
 .burger-menu__checkbox {
@@ -316,12 +313,39 @@ body,
   grid-template-columns: repeat(2, 1fr);
   display: grid;
 }
+.projects__main a {
+  width: 100%;
+}
+.projects__main .image-container {
+  height: 330px;
+  overflow: hidden;
+  cursor: pointer;
+  /* box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
 .projects__img {
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: all 3s ease-in-out;
+}
+.projects__main .image-container:hover .projects__img {
+  object-position: center bottom;
 }
 .projects__data {
   align-self: center;
+}
+.projects__data a {
+  margin-top: 1rem;
+  color: #ff8a8a;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.projects__data a:hover {
+  padding-left: 20px;
 }
 .projects__description {
   line-height: 1.5;
@@ -501,6 +525,9 @@ html:has(.toggle__checkbox:checked) .contact__input::placeholder {
 
 /* For mobile Screen  */
 @media (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
   .about__pic {
     width: 25rem;
   }
