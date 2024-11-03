@@ -669,6 +669,7 @@ html:has(.toggle__checkbox:checked) .contact__input::placeholder {
     left: -2rem;
     z-index: -1;
     width: 40%;
+    background: transparent;
   }
   .nav__list {
     padding-left: 4rem;
