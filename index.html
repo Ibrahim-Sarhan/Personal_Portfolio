@@ -20,11 +20,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./style.css" />
     <title>Ibrahim Sarhan Portfolio</title>
   </head>
 
   <body>
+    <div class="top_header">
+          <a href="mailto: IbrahimAbdulazizFSD@gmail.com" class="email animate__animated animate__slow  animate__flipInX"
+                >IbrahimAbdulazizFSD@gmail.com</a
+              >
+<a class="tel_number" href="">01142308854</a>
+</div>
+
     <header class="header">
       <div class="container header__container">
         <label for="menu" class="burger-menu">
@@ -62,67 +73,74 @@
     <section id="about" class="section about">
       <div class="container section__container">
         <div class="about__data">
-          <h1 class="about__heading">
-            WELCOME TO <br />
-            <span>WEB WORLD</span>
-          </h1>
-          <p class="about__objective">
-            <span class="about__name">Ibrahim Sarhan</span> Web Developer
-          </p>
-          <p>This Portfolio made by me</p>
+          <div class="about__objective">
+            <div>
+              <h1 class=" about__name about__heading">Ibrahim_Sarhan</h1>
+              <span class="word wisteria">Designer</span>
+              <span class="word spacing">ss</span>
+              <span class="word belize">Developer</span>
+              <!-- <span class="word pomegranate">Best Choise/span>
+              <span class="word green">beautiful.</span>
+              <span class="word midnight">cheap.</span> -->
+            </div>
           <div class="summary_container">
-            <p><strong>Summary</strong></p>
-
+            <h2 class="h2-heading"><strong>Profile</strong></h2>
             <p class="about_summary">
-              I am a skilled web developer specializing in creating dynamic and
-              responsive user interfaces using the React library. My expertise
-              ensures seamless and efficient web applications tailored to your
-              needs.
+                I am a Junior Front End Developer with 1.5 years of experience in building websites. Having a
+              strong knowlege in Front-End development and I am skilled in creating user-friendly and
+              responsive web applications using HTML , CSS , JavaScript , Bootstrap and React. I am currently
+              developing myself in framworks like Next JS and other techniques to improve my skills to growing
+              as a professional web developer. In addition to my technical skills, I am able to communicate with my
+              team as a developer and making meaningful contributions to projects.
             </p>
           </div>
         </div>
-        <div class="about__pic-container">
-          <img
-            class="about__pic"
-            src="./images/personal-pic.png"
-            alt="personal pic of Ibrahim Sarhan"
-          />
-        </div>
       </div>
     </section>
+              <!-- Start skills section  -->
+          <section class="section skills-section">
+            <div class="container">
+              <h2 class="skills-header h2-heading section-header">Skills and Tools</h2>
+                          <div class="skills-content">
+              <ul class="skills-list  item-header">
+                <h4 class="skills-list-header">Languages</h4>
+                <li class="section-description list-item skills-list-item">
+                  HTML
+                </li>
+                <li class="section-description list-item skills-list-item">
+                  CSS
+                </li>
+                <li class="section-description list-item skills-list-item">
+                  JavaScript
+                </li>
+              </ul>
+              <ul class="skills-list item-header">
+                <h4 class="skills-list-header">Libraries</h4>
+                <li class="section-description list-item skills-list-item">
+                  Bootstrap
+                </li>
+                <li class="section-description list-item skills-list-item">
+                  React
+                </li>
+                <li class="section-description list-item skills-list-item">
+                  React Query
+                </li>
+              </ul>
+                            <ul class="skills-list item-header">
+                <h4 class="skills-list-header">Frameworks</h4>
+                <li class="section-description list-item skills-list-item">
+                  Next JS
+                </li>
+              </ul>
+            </div>
+            </div>
 
-    <section id="skills" class="section skills">
-      <div class="container section__container">
-        <h2 class="h2-heading">Skills</h2>
-
-        <ul class="skills__list">
-          <li class="skills__item">
-            <i class="skills__icon fa-brands fa-html5"></i>
-            <h2 class="skills__title">HTML</h2>
-          </li>
-          <li class="skills__item">
-            <i class="skills__icon fa-brands fa-css3-alt"></i>
-            <h2 class="skills__title">CSS</h2>
-          </li>
-          <li class="skills__item">
-            <i class="skills__icon fa-brands fa-js"></i>
-            <h2 class="skills__title">Javascript</h2>
-          </li>
-          <li class="skills__item">
-            <i class="skills__icon fa-brands fa-bootstrap"></i>
-            <h2 class="skills__title">BOOTSTRAP</h2>
-          </li>
-          <li class="skills__item">
-            <i class="skills__icon fa-brands fa-react"></i>
-            <h2 class="skills__title">React</h2>
-          </li>
-        </ul>
-      </div>
-    </section>
+          </section>
+          <!-- End skills section  -->
 
     <section id="projects" class="section projects">
       <div class="container section__container">
-        <h2 class="h2-heading">MY PROJECTS</h2>
+        <h2 class="h2-heading">My Projets</h2>
         <div class="projects__main">
           <a
             target="_blank"
@@ -268,5 +286,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="./main.js"></script>
   </body>
 </html>
