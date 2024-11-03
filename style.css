@@ -131,17 +131,9 @@ body,
 /* End Global Component  */
 /* Start Text Effects  */
 
-/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:600); */
-
-/* p {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0;
-} */
-
 .word {
   opacity: 0;
-  font-size: 30px;
+  font-size: var(--font-size-24);
 }
 
 .letter {
@@ -322,7 +314,6 @@ body,
   text-align: start;
   padding-left: 2rem;
   line-height: 1.4;
-  color: #555;
   font-size: 1.5rem;
 }
 .summary_container p:first-child {
@@ -615,7 +606,7 @@ html:has(.toggle__checkbox:checked) .contact__input::placeholder {
   }
 }
 
-/* For mobile Screen  */
+/* For mobile Screen 567px   */
 @media (max-width: 576px) {
   html {
     font-size: 8px;
@@ -665,7 +656,7 @@ html:has(.toggle__checkbox:checked) .contact__input::placeholder {
   .nav {
     position: absolute;
     padding: 3rem 0;
-    top: -250%;
+    top: -255%;
     left: -2rem;
     z-index: -1;
     width: 40%;
@@ -695,5 +686,38 @@ html:has(.toggle__checkbox:checked) .contact__input::placeholder {
   .contact__button {
     margin: 2rem auto 0;
     display: block;
+  }
+}
+/* For mobile Screen 320px   */
+@media (max-width: 320px) {
+  html {
+    font-size: 7px;
+  }
+  .container {
+    padding: 0;
+    width: 100%;
+  }
+  .about__heading {
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+  }
+
+  .h2-heading {
+    font-size: var(--font-size-38);
+    text-align: center;
+  }
+  .about_summary {
+    text-align: start;
+    line-height: 1.4;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+  }
+  .animation-content {
+    margin-left: 13rem;
+  }
+  .word {
+    font-size: 2rem;
+    text-align: center;
   }
 }
