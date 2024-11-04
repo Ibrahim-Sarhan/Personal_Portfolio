@@ -619,7 +619,7 @@ html:has(.toggle__checkbox:checked) .contact__input::placeholder {
     width: 100%;
   }
   .section__container {
-    padding: 0 3rem;
+    padding: 0;
   }
 
   .about__heading {
