@@ -85,16 +85,15 @@ body,
   padding: 0 3rem;
 }
 .top_header {
-  padding: 1rem 0 1rem 2rem;
+  padding: 2rem 8rem;
   display: flex;
-  justify-content: space-around;
   background: linear-gradient(
       90deg,
       rgb(76, 115, 255) 2.34%,
       rgb(56, 155, 255) 100.78%
     )
     text;
-  /* -webkit-text-fill-color: transparent; */
+  gap: 3rem;
 }
 .top_header a {
   /* color: var(--color-secondary); */
@@ -642,7 +641,7 @@ html:has(.toggle__checkbox:checked) .contact__input::placeholder {
     transition: var(--transition-timing);
   }
   .burger-menu__checkbox:checked + .nav {
-    top: 120%;
+    left: 0;
   }
   .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(1) {
     transform: translateY(10px) rotate(40deg);
@@ -657,8 +656,8 @@ html:has(.toggle__checkbox:checked) .contact__input::placeholder {
   .nav {
     position: absolute;
     padding: 3rem 0;
-    top: -255%;
-    left: -2rem;
+    top: 45px;
+    left: -95px;
     z-index: -1;
     width: 40%;
     background: transparent;
